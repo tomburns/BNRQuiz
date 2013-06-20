@@ -9,5 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface BNRQuizViewController : UIViewController
+{
+    NSMutableArray *questions;
+    NSMutableArray *answers;
+    
+    int currentQuestionIndex;
+    
+    IBOutlet UILabel *questionField;
+    IBOutlet UILabel *answerField;
+
+}
+
+- (IBAction)showQuestion:(id)sender;
+- (IBAction)showAnswer:(id)sender;
 
 @end
